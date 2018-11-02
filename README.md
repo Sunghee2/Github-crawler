@@ -15,7 +15,7 @@
 
      - 나라별 user 순위
 
-     - 
+     - follower 많이 한 것 
 
 2. 시스템 아키텍처
 3. 데이터 수집 방법
@@ -40,11 +40,27 @@
 >
 > -> 따로 `https://api.github.com/users/[username]` 해야 보임...
 
-
-
 > star : `https://api.github.com/users/Sunghee2/starred`
 >
 > following : `https://api.github.com/users/Sunghee2/following` 
+
+<br/>
+
+**18-11-03**
+
+- [x] python3....
+- [x] json to csv file
+- [ ] 마지막 id 받아오기 
+
+> :bug: pandas 2.* 버전은 안됨.. 
+>
+> ​	-> pip3 사용, `#!/usr/bin/env python3` 맨 앞에 작성
+>
+> pandas에 to_csv 함수 : http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_csv.html?highlight=csv#pandas.DataFrame.to_csv
+
+> crawler 참고 코드
+>
+> https://www.kaggle.com/jboysen/quick-tutorial-flatten-nested-json-in-pandas
 
 
 

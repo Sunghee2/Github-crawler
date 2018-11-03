@@ -48,19 +48,19 @@ def get_remaining_limit():
 
 def main():
     last_id = get_last_id()
-    # while()
-    r = requests.get("https://api.github.com/users", params={
-            'since': last_id, 
-            'client_id': client_id,
-            'client_secret': client_secret
-    })
-    df = pandas.read_json(r.text)
-    df_join = add_user_details(df)
-    if last_id == 0:
-        df_join.to_csv('sample.csv', index=False)
-    else:
-        df_join.to_csv('sample.csv', mode='a', header=False, index=False)
-    last_id = df.tail(1).index.item()
+    while(get_remaining_limit() > 31):
+        r = requests.get("https://api.github.com/users", params={
+                'since': last_id, 
+                'client_id': client_id,
+                'client_secret': client_secret
+        })
+        df = pandas.read_json(r.text)
+        df_join = add_user_details(df)
+        if last_id == 0:
+            df_join.to_csv('sample.csv', index=False)
+        else:
+            df_join.to_csv('sample.csv', mode='a', header=False, index=False)
+        last_id = df_join.tail(1)['id'].item()
 
 if __name__ == "__main__":
-    get_remaining_limit()
+    main()

@@ -57,7 +57,7 @@
 - [x] series => df
 - [x] 두 개의 df join하기 
 - [x] user상세정보 api -> web scraping (취소)
-- [ ] 
+- [x] limit 남아있으면 무한반복
 
 > :bug: pandas 2.* 버전은 안됨.. 
 >

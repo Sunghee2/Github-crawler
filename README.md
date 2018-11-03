@@ -60,6 +60,12 @@
 > pandas에 to_csv 함수 : http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_csv.html?highlight=csv#pandas.DataFrame.to_csv
 >
 > csv 전체를 읽어오는데 마지막 것만 읽어올 수 없을까…. -> index 
+>
+> 맨 처음 실행했을 때(csv파일이 없을 때) 에러처리
+>
+> 마지막 index 받아오는 것 index 잘못함[-2:-1] 이렇게 하면 마지막에서 2번째 출력됨 -> [-1:]
+>
+> csv 파일 추가되는데 df의 row index가 그대로 들어감... 상관없나..? 일단 냅두자..
 
 > crawler 참고 코드
 >

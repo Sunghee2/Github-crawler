@@ -13,7 +13,7 @@
        >
        > 그리고 나라 도시…정리해야됨…ㅠ 가능하겠지..?
 
-     - 나라별 user 순위
+     - 나라별 user 몇명인지, 순위
 
      - follower 많이 한 것 
 
@@ -52,6 +52,7 @@
 - [x] json to csv file
 - [x] 마지막 id 받아오기 
 - [x] 마지막 value 받아오기
+- [x] csv파일에 덮어쓰기
 
 > :bug: pandas 2.* 버전은 안됨.. 
 >
@@ -66,6 +67,8 @@
 > 마지막 index 받아오는 것 index 잘못함[-2:-1] 이렇게 하면 마지막에서 2번째 출력됨 -> [-1:]
 >
 > csv 파일 추가되는데 df의 row index가 그대로 들어감... 상관없나..? 일단 냅두자..
+>
+> *API rate limit exceeded* -> oauth/ params에 client_id, client_secret 보내주면 됨
 
 > crawler 참고 코드
 >

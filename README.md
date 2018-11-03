@@ -50,13 +50,16 @@
 
 - [x] python3....
 - [x] json to csv file
-- [ ] 마지막 id 받아오기 
+- [x] 마지막 id 받아오기 
+- [x] 마지막 value 받아오기
 
 > :bug: pandas 2.* 버전은 안됨.. 
 >
 > ​	-> pip3 사용, `#!/usr/bin/env python3` 맨 앞에 작성
 >
 > pandas에 to_csv 함수 : http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_csv.html?highlight=csv#pandas.DataFrame.to_csv
+>
+> csv 전체를 읽어오는데 마지막 것만 읽어올 수 없을까…. -> index 
 
 > crawler 참고 코드
 >

@@ -66,9 +66,11 @@
 >
 > 마지막 index 받아오는 것 index 잘못함[-2:-1] 이렇게 하면 마지막에서 2번째 출력됨 -> [-1:]
 >
-> csv 파일 추가되는데 df의 row index가 그대로 들어감... 상관없나..? 일단 냅두자..
+> csv 파일 추가되는데 df의 row index가 그대로 들어감... 상관없나..? 일단 냅두자.. -> csv파일이랑 다르게 인덱스 제대로 나옴 -> df의 row index 없앰
 >
 > *API rate limit exceeded* -> oauth/ params에 client_id, client_secret 보내주면 됨
+>
+> *ValueError: If using all scalar values, you must pass an index* -> `read_json(typ='series')`
 
 > crawler 참고 코드
 >

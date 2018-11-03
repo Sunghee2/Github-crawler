@@ -53,6 +53,9 @@
 - [x] 마지막 id 받아오기 
 - [x] 마지막 value 받아오기
 - [x] csv파일에 덮어쓰기
+- [x] /user/sunghee2 user상세정보 요청
+- [x] series => df
+- [x] 두 개의 df join하기 
 
 > :bug: pandas 2.* 버전은 안됨.. 
 >
@@ -69,6 +72,8 @@
 > csv 파일 추가되는데 df의 row index가 그대로 들어감... 상관없나..? 일단 냅두자.. -> csv파일이랑 다르게 인덱스 제대로 나옴 -> df의 row index 없앰
 >
 > *API rate limit exceeded* -> oauth/ params에 client_id, client_secret 보내주면 됨
+>
+> ​	(인증되었으면 시간당 5000, 인증x면 시간당 60) https://api.github.com/rate_limit : 남아있는 요청 횟수
 >
 > *ValueError: If using all scalar values, you must pass an index* -> `read_json(typ='series')`
 

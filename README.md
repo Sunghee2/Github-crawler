@@ -76,6 +76,12 @@
 > ​	(인증되었으면 시간당 5000, 인증x면 시간당 60) https://api.github.com/rate_limit : 남아있는 요청 횟수
 >
 > *ValueError: If using all scalar values, you must pass an index* -> `read_json(typ='series')`
+>
+> <br/>
+>
+> api 호출 너무 많아서 user details은 web에서 들고오자……….ㅜ -> 근데 api보다 엄청 느린 듯 ㅠㅠㅠㅠ
+>
+> *Command "python setup.py egg_info" failed with error code 1 in /private/tmp/pip-install-lgil0nds/BeautifulSoup/*   --> 코드만 보고 BeautifulSoup로 다운받았는데 알고보니 bs4로 install 했어야 했다....
 
 > crawler 참고 코드
 >

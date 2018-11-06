@@ -1,28 +1,52 @@
-# 빅데이터 프로그래밍
-하둡 기반의 빅데이터 NLP 시스템 개발
+# Github-crawler
 
-1. 문제정의
+### Prerequisites(Github)
 
-   - 프로젝트 주제
+https://github.com/settings/developers
 
-   - 프로젝트 목표
+Add *client_id, client_secret* in `crawler/gh_crawler.py`
 
-     - 나라별 star repo 순위
+> For API requests using Basic Authentication or OAuth, you can make up to 5000 requests per hour. 
 
-       > timestamp써서 가능할까? 시간순으로도? 그러면 전체로 하자
-       >
-       > 그리고 나라 도시…정리해야됨…ㅠ 가능하겠지..?
+<br/>
 
-     - 나라별 user 몇명인지, 순위
+### Result
 
-     - follower 많이 한 것 
+fieldnames in a file
 
-2. 시스템 아키텍처
-3. 데이터 수집 방법
-4. 데이터 분석 방법
-5. 데이터 분석 결과
+```
+- avatar_url
+- events_url
+- followers_url
+- following_url
+- gists_url
+- gravatar_id
+- html_url
+- id
+- login
+- node_id
+- organizations_url
+- received_events_url
+- repos_url
+- site_admin
+- starred_url
+- subscriptions_url
+- type
+- url
+- name
+- company
+- blog
+- location
+- email
+- public_repos
+- public_gists
+- followers
+- following
+- created_at
+- updated_at
+```
 
-
+<br/>
 
 ### Todo
 
@@ -88,17 +112,7 @@
 >   ​	star은 또 api를 이용해야하니깐 starred는 scraping으로 하자 -> 그냥 starred는 따로 파일 만들자...
 >
 > - *Command "python setup.py egg_info" failed with error code 1 in /private/tmp/pip-install-lgil0nds/BeautifulSoup/*   --> 코드만 보고 BeautifulSoup로 다운받았는데 알고보니 bs4로 install 했어야 했다....
-
-> crawler 참고 코드
 >
-> https://www.kaggle.com/jboysen/quick-tutorial-flatten-nested-json-in-pandas
+> - 혹시라도 시간 초과 -> timezone.now 하고 rate limit에서 시간 비교해서 하면 될 것 같음..
 
-
-
-
-
-https://www.maxmind.com/en/free-world-cities-database 도시, 국가 정보
-
-http://www.geodatasource.com/world-cities-database/free
-
-https://stackoverflow.com/questions/3845006/database-of-countries-and-their-cities
+생각해보니깐 자연어처리… 주제가 핀트에 어긋난 것 같다.. 어떡하지...
